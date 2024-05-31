@@ -1,0 +1,143 @@
+{
+  "scenarios": [
+    {
+      "id": "comeQuestionRoom",
+      "descriptionDefault": "Mystery man: \"Hi, if you want to get an item, answer my question:)\"",
+      "descriptionSecond": "Mystery man: \"Do you still want to try?\"",
+      "buttons": [
+        {
+          "textDefault": "Okay",
+          "choiceDefault": "question"
+        },
+        {
+          "textDefault": "Refuse!",
+          "choiceDefault": "leaveCombat"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "question",
+      "descriptionDefault": "Mystery man: \"{questionLine}\"",
+      "buttons": [
+        {
+          "textDefault": "Yes",
+          "choiceDefault": "checkAnswerYes"
+        },
+        {
+          "textDefault": "No",
+          "choiceDefault": "checkAnswerNo"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "checkAnswer",
+      "descriptionDefault": "Mystery man: \"You are right! You get the item.\"",
+      "descriptionSecond": "Mystery man: \"You are wrong... You get nothing.\"",
+      "buttons": [
+        {
+          "textDefault": "Cool!",
+          "textSecond": "Go back",
+          "choiceDefault": "itemAnswer",
+          "choiceSecond": "afterItemRoom"
+
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "itemAnswer",
+      "descriptionDefault": "You got {receivedItem}.",
+      "buttons": [
+        {
+          "textDefault": "Go back!",
+          "choiceDefault": "leaveCombat"
+
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "afterItemRoom",
+      "descriptionDefault": "Mystery man: \"You've exhausted your attempts here.\"",
+      "buttons": [
+        {
+          "textDefault": "Go back!",
+          "choiceDefault": "leaveCombat"
+
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "",
+      "descriptionDefault": "\"Error: Part of the script is lost.\"",
+      "buttons": [
+        {
+          "textDefault": "Title screen",
+          "choiceDefault": "title screen"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    }
+  ]
+}

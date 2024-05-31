@@ -1,0 +1,114 @@
+{
+  "scenarios": [
+    {
+      "id": "startingFork",
+      "descriptionDefault": "You find yourself in a strange place and there is a fork in front of you.",
+      "descriptionSecond": "You're at a crossroads again.",
+      "buttons": [
+        {
+          "textDefault": "Left",
+          "textSecond": "Left",
+          "choiceDefault": "monster",
+          "choiceSecond": "treasureRoom"
+        },
+        {
+          "textDefault": "Forward",
+          "textSecond": "Forward",
+          "choiceDefault": "comeNPCRoom",
+          "choiceSecond": "roomAfterItem"
+        },
+        {
+          "textDefault": "Right",
+          "textSecond": "Right",
+          "choiceDefault": "comeQuestionRoom",
+          "choiceSecond": "afterItemRoom"
+        },
+        {
+          "textDefault": "Title screen",
+          "textSecond": "Title screen",
+          "choiceDefault": "title screen",
+          "choiceSecond": "title screen"
+        }
+      ]
+    },
+    {
+      "id": "anotherFork",
+      "descriptionDefault": "Another fork...",
+      "descriptionSecond": "You're at a {numberOfFork} crossroads again.",
+      "buttons": [
+        {
+          "textDefault": "Left",
+          "textSecond": "Left",
+          "choiceDefault": "monster",
+          "choiceSecond": "treasureRoom"
+        },
+        {
+          "textDefault": "Forward",
+          "textSecond": "Forward",
+          "choiceDefault": "comeNPCRoom",
+          "choiceSecond": "roomAfterItem"
+
+        },
+        {
+          "textDefault": "Right",
+          "textSecond": "Right",
+          "choiceDefault": "comeQuestionRoom",
+          "choiceSecond": "afterItemRoom"
+
+        },
+        {
+          "textDefault": "Back",
+          "textSecond": "Back",
+          "choiceDefault": "goToPreviousFork",
+          "choiceSecond": "goToPreviousFork"
+        }
+      ]
+    },
+    {
+      "id": "endGame",
+      "descriptionDefault": "You've achieved victory!",
+      "buttons": [
+        {
+          "textDefault": "Title screen",
+          "choiceDefault": "title screen"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "",
+      "descriptionDefault": "\"Error: Part of the script is lost.\"",
+      "buttons": [
+        {
+          "textDefault": "Title screen",
+          "choiceDefault": "title screen"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Fork Game</string>
+    <string name="title_activity_title_screen">TitleScreen</string>
+    <string name="start_game">Start Game</string>
+    <string name="hp">HP: </string>
+    <string name="weapon">Weapon: </string>
+    <string name="weaponName">Excalibur</string>
+    <string name="button">Button</string>
+    <string name="inventory">Inventory</string>
+    <string name="hpAmount_hint">HP amount</string>
+    <string name="close">Close</string>
+    <string name="itemName">Item Name</string>
+    <string name="itemInfo">Other Info</string>
+
+
+
+</resources>

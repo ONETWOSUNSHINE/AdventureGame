@@ -1,0 +1,260 @@
+{
+  "scenarios": [
+    {
+      "id": "monster",
+      "descriptionDefault": "You encounter a {monsterType}.",
+      "descriptionSecond": "It looks like a {monsterName} is still here!\n{monsterType}'s HP: {monsterHp}",
+      "buttons": [
+        {
+          "textDefault": "Fight",
+          "choiceDefault": "fight"
+        },
+        {
+          "textDefault": "Leave",
+          "choiceDefault": "leaveCombat"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "fight",
+      "descriptionDefault": "The beginning of the battle with a {monsterName}\n{monsterType}'s HP: {monsterHp}",
+      "descriptionSecond": "What now?\n{monsterType}'s HP: {monsterHp}",
+      "buttons": [
+        {
+          "textDefault": "Attack!",
+          "choiceDefault": "characterAttack"
+        },
+        {
+          "textDefault": "Run Away",
+          "choiceDefault": "runAway"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "characterAttack",
+      "descriptionDefault": "You dealt {operation} damage to a {monsterName}.\n{monsterType}'s HP: {monsterHp}",
+      "buttons": [
+        {
+          "textDefault": ">",
+          "textSecond": ">",
+          "choiceDefault": "victory",
+          "choiceSecond": "monsterAttack"
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        }
+      ]
+    },
+    {
+      "id": "monsterAttack",
+      "descriptionDefault": "A {monsterName} is furious. You take {operation} damage.\n{monsterType}'s HP: {monsterHp}",
+      "buttons": [
+        {
+          "textDefault": ">",
+          "textSecond": ">",
+          "choiceDefault": "death",
+          "choiceSecond": "fight"
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        }
+      ]
+    },
+    {
+      "id": "runAway",
+      "descriptionDefault": "Fearing for your life, you run away, but\n{monsterName} manages to damage you.\nDamage inflicted: {operation}",
+      "buttons": [
+        {
+          "textDefault": ">",
+          "textSecond": ">",
+          "choiceDefault": "death",
+          "choiceSecond": "leaveCombat"
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        }
+      ]
+    },
+    {
+      "id": "death",
+      "descriptionDefault": "Your adventure is done. Your are dead.",
+      "buttons": [
+        {
+          "textDefault": "Title screen",
+          "choiceDefault": "title screen"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "victory",
+      "descriptionDefault": "The enemy is defeated and the way is clear.",
+      "buttons": [
+        {
+          "textDefault": "Go forward",
+          "choiceDefault": "treasureRoom"
+        },
+        {
+          "textDefault": "Go back",
+          "choiceDefault": "leaveCombat"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "treasureRoom",
+      "descriptionDefault": "You enter a treasure room and find a item!\nYou got {receivedItem} and a random amount of hp.",
+      "descriptionSecond": "You returned to a treasure room.",
+      "buttons": [
+        {
+          "textDefault": "Go forward",
+          "choiceDefault": "combatIsLeaf"
+        },
+        {
+          "textDefault": "Go back",
+          "choiceDefault": "leaveCombat"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "combatIsLeaf",
+      "descriptionDefault": "Looks like it is a dead end.",
+      "descriptionSecond": "Another passage is visible ahead...",
+      "buttons": [
+        {
+          "textDefault": "Go back",
+          "textSecond": "Go forward",
+          "choiceDefault": "leaveCombat",
+          "choiceSecond": "forkMakerFromCombat"
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        }
+      ]
+    },
+    {
+      "id": "",
+      "descriptionDefault": "\"Error: Part of the script is lost.\"",
+      "buttons": [
+        {
+          "textDefault": "Title screen",
+          "choiceDefault": "title screen"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    }
+  ]
+}

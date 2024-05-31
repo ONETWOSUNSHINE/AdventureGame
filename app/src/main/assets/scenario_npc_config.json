@@ -1,0 +1,251 @@
+{
+  "scenarios": [
+    {
+      "id": "comeNPCRoom",
+      "descriptionDefault": "{npcName}: \"Oh, I didn't see you before. Who are you?\"",
+      "descriptionSecond": "{npcName}: \"Oh, It is you again!\"",
+      "buttons": [
+        {
+          "textDefault": "Reply",
+          "textSecond": "Give back the {itemType}",
+          "choiceDefault": "firstLine",
+          "choiceSecond": "giveItem"
+        },
+        {
+          "textDefault": "Keep silent",
+          "textSecond": "Go back",
+          "choiceDefault": "secondLine",
+          "choiceSecond": "leaveCombat"
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        }
+      ]
+    },
+    {
+      "id": "firstLine",
+      "descriptionDefault": "{npcName}: \"I, see...Could you help me? I lost a {itemType} somewhere nearby...\"",
+      "buttons": [
+        {
+          "textDefault": "Okay",
+          "choiceDefault": "thirdLine"
+        },
+        {
+          "textDefault": "No",
+          "choiceDefault": "forthLine"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "secondLine",
+      "descriptionDefault": "{npcName}: \"You are silent...Nevertheless, could you look my {itemType}?\"",
+      "buttons": [
+        {
+          "textDefault": "Okay",
+          "choiceDefault": "thirdLine"
+        },
+        {
+          "textDefault": "No",
+          "choiceDefault": "forthLine"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "thirdLine",
+      "descriptionDefault": "{npcName}: \"Thanks a lot! After that you can pass.\"",
+      "buttons": [
+        {
+          "textDefault": "Give back the {itemType}",
+          "choiceDefault": "giveItem"
+        },
+        {
+          "textDefault": "Go back",
+          "choiceDefault": "leaveCombat"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "forthLine",
+      "descriptionDefault": "{npcName}: \"That's too bad...I can't let you pass through me...\"",
+      "buttons": [
+        {
+          "textDefault": "Give back the {itemType}",
+          "choiceDefault": "giveItem"
+        },
+        {
+          "textDefault": "Go back",
+          "choiceDefault": "leaveCombat"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "giveItem",
+        "descriptionDefault": "You seem to have found the right item...\"",
+        "descriptionSecond": "{npcName}: \"Doesn't look like you have anything to give.\"",
+      "buttons": [
+        {
+          "textDefault": ">",
+          "textSecond": ">",
+          "choiceDefault": "finalLine",
+          "choiceSecond": "comeNPCRoom"
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        }
+      ]
+    },
+    {
+      "id": "finalLine",
+      "descriptionDefault": "{npcName}: \"Thanks a lot!!! Now you can pass! Goodbye!\"",
+      "buttons": [
+        {
+          "textDefault": ">",
+          "choiceDefault": "roomAfterItem"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "roomAfterItem",
+      "descriptionDefault": "{npcName}: \"Thanks again for everything!\"",
+      "buttons": [
+        {
+          "textDefault": "Go forward",
+          "choiceDefault": "npcRoomIsLeaf"
+        },
+        {
+          "textDefault": "Go back",
+          "choiceDefault": "leaveCombat"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    },
+    {
+      "id": "npcRoomIsLeaf",
+      "descriptionDefault": "Looks like it is a dead end.",
+      "descriptionSecond": "Another passage is visible ahead...",
+      "buttons": [
+        {
+          "textDefault": "Go back",
+          "textSecond": "Go forward",
+          "choiceDefault": "leaveCombat",
+          "choiceSecond": "forkMakerFromNPC"
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        },
+        {
+          "textDefault": "",
+          "textSecond": "",
+          "choiceDefault": "",
+          "choiceSecond": ""
+        }
+      ]
+    },
+    {
+      "id": "",
+      "descriptionDefault": "\"Error: Part of the script is lost.\"",
+      "buttons": [
+        {
+          "textDefault": "Title screen",
+          "choiceDefault": "title screen"
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        },
+        {
+          "textDefault": "",
+          "choiceDefault": ""
+        }
+      ]
+    }
+  ]
+}
